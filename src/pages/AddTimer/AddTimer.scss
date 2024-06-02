@@ -1,0 +1,68 @@
+@import '../../vendor/styles/variables.scss';
+
+.add {
+  &__title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 26.4px;
+  }
+
+  &__timer {
+    display: flex;
+  }
+
+  &__minutes-block {
+    display: flex;
+    align-items: baseline;
+    margin: 75px 0 125px 71px;
+    cursor: n-resize;
+
+    &--seconds {
+      margin-left: 71px;
+    }
+  }
+
+  &__minutes-container {
+    position: relative;
+    touch-action: none;
+    user-select: none;
+  }
+
+  &__minutes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 40px;
+    line-height: 44px;
+
+    &--prev,
+    &--next {
+      position: absolute;
+      left: 0;
+      color: $whitesmoke;
+    }
+
+    &--prev {
+      top: -48px;
+    }
+
+    &--next {
+      top: 48px;
+    }
+  }
+  
+  &__minutes-span {
+    display: block;
+    margin-left: 21px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &__button {
+    width: 206px;
+    height: 56px;
+    margin: 0 auto;
+  }
+}

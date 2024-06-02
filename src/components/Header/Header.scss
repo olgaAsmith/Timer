@@ -1,0 +1,32 @@
+@import '../../vendor/styles/variables.scss';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $headerHeight;
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 26px 24px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__add-button {
+    display: block;
+    width: 20px;
+    height: 13px;
+    background-image: url(../../vendor/images/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

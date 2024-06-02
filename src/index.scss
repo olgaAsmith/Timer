@@ -1,0 +1,35 @@
+@import './vendor/normalize.scss';
+@import './vendor/fonts/fonts.css';
+@import './vendor/styles/variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+  font-family: ALS Gorizont ExtraBold Expanded, sans-serif;
+  color: $white;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 39.6px;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.button {
+  border: none;
+  padding: 0;
+}

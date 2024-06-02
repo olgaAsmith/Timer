@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ALS Gorizont ExtraBold Expanded';
+    src: url('ALSGorizont-ExtraBoldExpanded.woff2') format('woff2'),
+        url('ALSGorizont-ExtraBoldExpanded.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

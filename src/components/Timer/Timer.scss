@@ -1,0 +1,84 @@
+@import '../../vendor/styles/variables.scss';
+
+.timer {
+  &__title {
+    font-size: 24px;
+    line-height: 26.4px;
+    margin-bottom: 14px;
+  }
+
+  &__element {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 4px 25px 0;
+    margin-bottom: -1px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #333;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__description {
+    display: block;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: -1.5px;
+  }
+
+  &__control {
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__control--play {
+    background-image: url(../../vendor/images/play.svg);
+  }
+
+  &__control--pause {
+    background-image: url(../../vendor/images/pause.svg);
+  }
+
+  &__control--forward {
+    width: 5px;
+    height: 8px;
+    background-image: url(../../vendor/images/arrow.svg);
+    margin-right: 8px;
+  }
+
+  &__delete-block {
+    display: none;
+  }
+
+  &__delete-block--visible {
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__time {
+    display: flex;
+  }
+  
+  &__delete {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../vendor/images/delete.svg);
+  }
+}

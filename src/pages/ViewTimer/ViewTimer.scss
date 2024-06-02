@@ -1,0 +1,49 @@
+@import '../../vendor/styles/variables.scss';
+
+.view {
+  &__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 257px;
+    height: 257px;
+    margin: 0 auto;
+  }
+
+  &__numbers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 21px;
+    margin-top: 20px;
+  }
+
+  &__button {
+    width: 161px;
+    height: 43.767px;
+  }
+}
+
+.view-end {
+  &__text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__button {
+    height: 45px;
+    margin-top: 10px;
+  }
+}
